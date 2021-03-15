@@ -1,0 +1,22 @@
+{
+    "apps": [],
+  
+    "deploy" : {
+      "matic_testnet" : {
+        "user" : "ubuntu",
+        "host" : "nft-forge-matic-testnet",
+        "ref"  : "origin/main",
+        "repo" : "git@github.com:glitch46/Forge-UI.git",
+        "path" : "/home/ubuntu/repos/Forge-UI",
+        "post-deploy" : "npm install && npm run build"
+      },
+      "matic_mainnet" : {
+        "user" : "ubuntu",
+        "host" : "nft-forge-matic-mainnet",
+        "ref"  : "origin/main",
+        "repo" : "git@github.com:glitch46/Forge-UI.git",
+        "path" : "/home/ubuntu/repos/Forge-UI",
+        "post-deploy" : "npm install && npm run build"
+      }
+    }
+  }
