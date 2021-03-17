@@ -68,7 +68,6 @@ const web3Modal = new Web3Modal({
 
 function App() {
   const [account, setAccount] = useState(null);
-
   // Details
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState(null);
@@ -420,7 +419,7 @@ function App() {
                   type={"checkbox"}
                   onChange={(e) => setOption2Checked(e.target.checked)}
                 />
-                <Form.Check.Label>{`NFT Auto Destructs at`}</Form.Check.Label>
+                <Form.Check.Label>{`NFT Auto Destructs at (Local Time Zone)`}</Form.Check.Label>
               </Form.Check>
               {option2Checked && (
                 <Form className="mt-2 ml-2">
