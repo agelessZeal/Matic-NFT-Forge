@@ -273,7 +273,7 @@ function App() {
         `Successfully created ${amountTokens} tokens with id #${id}`
       );
       setLink(
-        `https://testnets.opensea.io/assets/MUMBAI/${FORGE_ADDRESS}/${id}`
+        `https://opensea.io/assets/matic/${FORGE_ADDRESS}/${id}`
       );
       console.log("Tx Receipt", tx);
 
