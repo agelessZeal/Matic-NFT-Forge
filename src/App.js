@@ -179,8 +179,8 @@ function App() {
     console.log("Paying with ETH?", isPaymentETH);
     console.log(`Creating ${amountTokens} NFTs...`);
 
-    if (!option1Checked && !option2Checked)
-      return console.log("Must select at least one condition");
+    // if (!option1Checked && !option2Checked)
+    //   return console.log("Must select at least one condition");
 
     try {
       const ipfsHash = await addToIpfs(file);
