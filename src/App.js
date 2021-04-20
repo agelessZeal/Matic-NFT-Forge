@@ -239,7 +239,7 @@ function App() {
             expirationCondition,
             schemaHash
           )
-          .send({ from: account, value: amountTokens * ethFee });
+          .send({ from: account, value:  ethFee });
       } else {
         const zutFee = await forgeContract.methods.zutFee().call();
         console.log("ZUT FEE", fromWei(zutFee));
@@ -248,7 +248,7 @@ function App() {
           .allowance(account, FORGE_ADDRESS)
           .call();
         console.log("Allowance", fromWei(allowance));
-        if (allowance < fromWei(amountTokens * zutFee)) {
+        if (allowance < fromWei( zutFee)) {
           const infinite = window.web3.utils
             .toBN(2)
             .pow(window.web3.utils.toBN(256).sub(window.web3.utils.toBN(1)));
