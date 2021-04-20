@@ -440,7 +440,7 @@ function App() {
             </div>
 
             {/* Select Payment */}
-            <div className="mt-4 ml-3">
+            {/* <div className="mt-4 ml-3">
               <Form.Group as={Row} controlId="formPlaintextPassword">
                 <Form.Label as="legend" column sm="4">
                   Payment Type
@@ -460,7 +460,7 @@ function App() {
                   />
                 </Col>
               </Form.Group>
-            </div>
+            </div> */}
 
             {/* Token Creation */}
             {account && file && (
